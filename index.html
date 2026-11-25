@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#080d18" />
+  <title>Cricket26 — World Cricket Zenith</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" aria-label="Cricket26 home">
+        <span class="brand-mark">C<span>26</span></span>
+        <span class="brand-copy">
+          <strong>CRICKET<span>26</span></strong>
+          <small>WORLD CRICKET ZENITH</small>
+        </span>
+      </a>
+
+      <div class="side-label">MAIN MENU</div>
+      <nav class="main-nav">
+        <button class="nav-link active" data-page="dashboard"><span>◈</span> Dashboard</button>
+        <button class="nav-link" data-page="match"><span>◎</span> Play Match</button>
+        <button class="nav-link" data-page="auction"><span>♜</span> Auction Room</button>
+        <button class="nav-link" data-page="teams"><span>◉</span> Franchises</button>
+        <button class="nav-link" data-page="tournament"><span>▤</span> Tournament</button>
+      </nav>
+
+      <div class="side-label">MANAGEMENT</div>
+      <nav class="main-nav">
+        <button class="nav-link" data-page="players"><span>♙</span> Players</button>
+        <button class="nav-link" data-page="records"><span>✧</span> Records</button>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="season-mini">
+          <span class="live-dot"></span>
+          <div><strong>IPL 2026</strong><small>SEASON ACTIVE</small></div>
+        </div>
+        <div class="profile-mini">
+          <div class="profile-avatar">C</div>
+          <div><strong>Cricket Manager</strong><small>Franchise Owner</small></div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <div class="eyebrow">WORLD CRICKET ZENITH / <span id="section-name">OVERVIEW</span></div>
+          <h1 id="page-title">Command Center</h1>
+        </div>
+        <div class="topbar-right">
+          <div class="season-pill"><span class="live-dot"></span> IPL 2026</div>
+          <button class="icon-button" id="sound-toggle" title="Toggle sound">♫</button>
+          <div class="user-chip"><span class="user-avatar">CM</span><span>Manager</span></div>
+        </div>
+      </header>
+
+      <section class="page active" id="page-dashboard">
+        <div class="hero-banner">
+          <div class="hero-content">
+            <div class="hero-kicker"><span class="live-dot"></span> THE NEW ERA OF CRICKET</div>
+            <h2>YOUR GAME.<br /><em>YOUR LEGACY.</em></h2>
+            <p>Build your franchise. Master every moment. Own the game.</p>
+            <div class="hero-actions">
+              <button class="primary-button" data-go="match">ENTER THE STADIUM <span>↗</span></button>
+              <button class="ghost-button" data-go="tournament">VIEW TOURNAMENT</button>
+            </div>
+          </div>
+          <div class="hero-orb"><div class="orb-inner">26</div><div class="orb-ring"></div></div>
+          <div class="hero-watermark">ZENITH</div>
+        </div>
+
+        <div class="section-heading">
+          <div><div class="eyebrow">SEASON SNAPSHOT</div><h2>League overview</h2></div>
+          <span class="subtle-tag">2026 SEASON</span>
+        </div>
+
+        <div class="stat-grid">
+          <article class="stat-card"><div class="stat-top"><span>FRANCHISES</span><span>◉</span></div><strong>10</strong><small>Competing teams</small></article>
+          <article class="stat-card"><div class="stat-top"><span>LEAGUE MATCHES</span><span>▣</span></div><strong>70</strong><small>League stage target</small></article>
+          <article class="stat-card"><div class="stat-top"><span>SEASON FORMAT</span><span>◷</span></div><strong>T20</strong><small>Twenty overs per innings</small></article>
+          <article class="stat-card accent-card"><div class="stat-top"><span>YOUR SCORE</span><span>✧</span></div><strong id="career-runs">0</strong><small>Career runs this session</small></article>
+        </div>
+
+        <div class="content-grid">
+          <article class="panel">
+            <div class="panel-heading"><div><div class="eyebrow">UPCOMING ACTION</div><h3>Featured match</h3></div><span class="status-tag">READY</span></div>
+            <div class="featured-match">
+              <div class="team-large"><div class="team-crest csk">CSK</div><strong>Chennai</strong><small>SUPER KINGS</small></div>
+              <div class="match-center"><span class="match-format">T20 • IPL 2026</span><strong>VS</strong><span class="match-time">MATCH 01</span></div>
+              <div class="team-large"><div class="team-crest mi">MI</div><strong>Mumbai</strong><small>INDIANS</small></div>
+            </div>
+            <button class="primary-button full-button" data-go="match">PLAY THIS MATCH <span>→</span></button>
+          </article>
+          <article class="panel">
+            <div class="panel-heading"><div><div class="eyebrow">THE COMPETITION</div><h3>Top franchises</h3></div><button class="text-button" data-go="teams">ALL TEAMS →</button></div>
+            <div class="mini-team-list" id="dashboard-teams"></div>
+          </article>
+        </div>
+
+        <div class="section-heading"><div><div class="eyebrow">YOUR DESTINATION</div><h2>Explore the game</h2></div></div>
+        <div class="quick-grid">
+          <button class="quick-card" data-go="auction"><span>♜</span><strong>Player Auction</strong><small>Build your dream squad</small><b>↗</b></button>
+          <button class="quick-card" data-go="tournament"><span>▤</span><strong>Championship</strong><small>Follow the season journey</small><b>↗</b></button>
+          <button class="quick-card" data-go="players"><span>♙</span><strong>Player Universe</strong><small>Discover the stars</small><b>↗</b></button>
+          <button class="quick-card" data-go="records"><span>✧</span><strong>Hall of Records</strong><small>Track match achievements</small><b>↗</b></button>
+        </div>
+      </section>
+
+      <section class="page" id="page-match">
+        <div class="match-toolbar">
+          <div><div class="eyebrow">3D MATCH EXPERIENCE</div><h2>THE STADIUM</h2><p class="muted">Time your shot. Find the gap. Score runs.</p></div>
+          <span class="status-tag" id="match-status">MATCH READY</span>
+        </div>
+        <div class="scoreboard">
+          <div><small>YOUR INNINGS</small><strong id="score">0/0</strong></div>
+          <div><small>OVERS</small><strong id="overs">0.0</strong></div>
+          <div><small>RUN RATE</small><strong id="run-rate">0.00</strong></div>
+          <div><small>LAST BALL</small><strong id="last-ball">—</strong></div>
+          <div><small>INNINGS</small><strong>1ST</strong></div>
+        </div>
+        <div class="stadium-frame">
+          <div id="stadium-canvas" aria-label="Interactive 3D cricket stadium"></div>
+          <div class="stadium-overlay">
+            <span class="stadium-live"><span class="live-dot"></span> LIVE SIMULATION</span>
+            <span class="stadium-camera">3D BROADCAST VIEW</span>
+          </div>
+          <div class="stadium-loading" id="stadium-loading">PREPARING THE STADIUM…</div>
+        </div>
+        <div class="match-controls">
+          <div class="control-info"><strong id="match-message">Ready for the first delivery?</strong><small>Press START MATCH, then choose your shot when the ball approaches.</small></div>
+          <div class="control-buttons">
+            <button class="secondary-button" id="start-match">START MATCH</button>
+            <button class="primary-button" id="shot-button" disabled>PLAY SHOT <span>↗</span></button>
+          </div>
+        </div>
+        <div class="shot-guide">
+          <div><span class="keycap">SPACE</span><strong>Play shot</strong><small>Timing is everything</small></div>
+          <div><span class="keycap">R</span><strong>Reset innings</strong><small>Start a fresh innings</small></div>
+          <div><span class="keycap">TIP</span><strong>Watch the ball</strong><small>Hit near the timing window</small></div>
+        </div>
+      </section>
+
+      <section class="page" id="page-auction">
+        <div class="section-heading"><div><div class="eyebrow">FRANCHISE MANAGEMENT</div><h2>Player auction room</h2><p class="muted">Explore the featured player pool and make a bid.</p></div><span class="status-tag">AUCTION SIMULATOR</span></div>
+        <div class="auction-summary">
+          <div><small>AVAILABLE PURSE</small><strong id="purse">₹120.0 Cr</strong></div>
+          <div><small>PLAYERS SIGNED</small><strong id="signed-count">0</strong></div>
+          <div><small>YOUR FRANCHISE</small><strong>CRICKET26 XI</strong></div>
+        </div>
+        <div class="panel">
+          <div class="panel-heading"><div><div class="eyebrow">FEATURED LOTS</div><h3>Available players</h3></div><span class="subtle-tag">DEMO PLAYER POOL</span></div>
+          <div class="table-wrap"><table><thead><tr><th>PLAYER</th><th>ROLE</th><th>COUNTRY</th><th>BASE PRICE</th><th>ACTION</th></tr></thead><tbody id="auction-list"></tbody></table></div>
+        </div>
+        <p class="notice">Auction values and the featured player pool are game simulation data, not an official complete IPL auction database.</p>
+      </section>
+
+      <section class="page" id="page-teams">
+        <div class="section-heading"><div><div class="eyebrow">THE FRANCHISE UNIVERSE</div><h2>Ten teams. One trophy.</h2><p class="muted">Explore the IPL 2026 franchise lineup.</p></div></div>
+        <div class="franchise-grid" id="franchise-grid"></div>
+      </section>
+
+      <section class="page" id="page-tournament">
+        <div class="section-heading"><div><div class="eyebrow">ROAD TO THE FINAL</div><h2>Championship centre</h2><p class="muted">Season format and sample opening fixtures.</p></div><span class="status-tag">IPL 2026</span></div>
+        <div class="tournament-hero"><div class="eyebrow">THE ULTIMATE PRIZE</div><h2>ONE TROPHY.<br /><em>ENDLESS GLORY.</em></h2><p>Compete through the league stage and fight for a place in the playoffs.</p></div>
+        <div class="stat-grid">
+          <article class="stat-card"><div class="stat-top"><span>TEAMS</span><span>◉</span></div><strong>10</strong><small>Franchises</small></article>
+          <article class="stat-card"><div class="stat-top"><span>LEAGUE FIXTURES</span><span>▣</span></div><strong>70</strong><small>Planned format</small></article>
+          <article class="stat-card"><div class="stat-top"><span>PLAYOFFS</span><span>♛</span></div><strong>4</strong><small>Qualification spots</small></article>
+          <article class="stat-card"><div class="stat-top"><span>FINAL</span><span>✧</span></div><strong>01</strong><small>Champion crowned</small></article>
+        </div>
+        <div class="panel"><div class="panel-heading"><div><div class="eyebrow">OPENING FIXTURES</div><h3>Featured schedule</h3></div></div><div id="fixtures-list" class="fixtures-list"></div></div>
+        <p class="notice">This is a playable season-mode foundation. The displayed opening fixtures are sample fixtures, not a verified official schedule.</p>
+      </section>
+
+      <section class="page" id="page-players">
+        <div class="section-heading"><div><div class="eyebrow">PLAYER UNIVERSE</div><h2>Meet the game changers</h2><p class="muted">Browse the featured player database.</p></div></div>
+        <div class="filter-row"><input id="player-search" type="search" placeholder="Search player or country…" /><select id="role-filter"><option value="All">All roles</option><option value="Batter">Batter</option><option value="Bowler">Bowler</option><option value="All-rounder">All-rounder</option><option value="Wicketkeeper">Wicketkeeper</option></select></div>
+        <div class="player-grid" id="player-grid"></div>
+      </section>
+
+      <section class="page" id="page-records">
+        <div class="section-heading"><div><div class="eyebrow">HALL OF EXCELLENCE</div><h2>Records & achievements</h2><p class="muted">Your session achievements and game milestones.</p></div></div>
+        <div class="stat-grid">
+          <article class="stat-card"><div class="stat-top"><span>CAREER RUNS</span><span>✧</span></div><strong id="record-runs">0</strong><small>Your session total</small></article>
+          <article class="stat-card"><div class="stat-top"><span>BOUNDARIES</span><span>▰</span></div><strong id="record-boundaries">0</strong><small>Fours and sixes</small></article>
+          <article class="stat-card"><div class="stat-top"><span>WICKETS LOST</span><span>♜</span></div><strong id="record-wickets">0</strong><small>In this session</small></article>
+          <article class="stat-card"><div class="stat-top"><span>BALLS FACED</span><span>◷</span></div><strong id="record-balls">0</strong><small>Deliveries completed</small></article>
+        </div>
+        <div class="panel"><div class="panel-heading"><div><div class="eyebrow">SESSION HISTORY</div><h3>Recent deliveries</h3></div></div><div id="delivery-history" class="history-list"><p class="muted">Play a match to create your first match record.</p></div></div>
+      </section>
+
+      <footer class="footer"><span>CRICKET26 © 2026</span><span>WORLD CRICKET ZENITH • BUILT FOR THE LOVE OF THE GAME</span></footer>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script type="module" src="./game.js"></script>
+</body>
+</html>
